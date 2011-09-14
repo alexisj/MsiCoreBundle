@@ -1,0 +1,11 @@
+<fieldset>
+  {{ form_errors(form) }}
+
+  {% form_theme form 'MsiCoreBundle:Form:field.html.twig' %}
+
+  {{ form_rest(form) }}
+
+  <div class="field">
+    <button class="btn" type="submit">Save</button>
+  </div>
+</fieldset>
