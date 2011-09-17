@@ -1,3 +1,11 @@
 limit:
-  pattern:  /limit/
+  pattern:  /limit/{return_route}
   defaults: { _controller: MsiCoreBundle:Core:setLimit }
+
+filter:
+  pattern:  /filter/{return_route}
+  defaults: { _controller: MsiCoreBundle:Core:setFilters }
+
+reset_filter:
+  pattern:  /filter/reset/{return_route}
+  defaults: { _controller: MsiCoreBundle:Core:resetFilters }
