@@ -50,7 +50,7 @@ h3 {
 }
 
 #header {
-    background:#606870;
+    background:#eeeeee;
     margin-bottom:15px;
 }
 
@@ -336,7 +336,7 @@ form.filter .field.last {
 .pagination .next a, .pagination .previous a {
     font-weight: bold;
 }
-.pagination .active a {
+.pagination .current a {
     background: none repeat scroll 0 0 #4A525A;
     color: #eeeeee !important;
     display: inline;

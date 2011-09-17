@@ -1,0 +1,18 @@
+<form class="filter" action="{{ path('limit') }}" method="POST">
+  <fieldset>
+    <div class="field">
+      <label>Display: </label>
+      <select id="selector_limit" class="medium" onchange="this.form.submit()" name="limit">
+        <option {% if session.get('limit') == -1 %} selected="selected" {% endif %} value="-1">All</option>
+        <option {% if session.get('limit') == 5 %} selected="selected" {% endif %} value="5">5</option>
+        <option {% if session.get('limit') == 10 %} selected="selected" {% endif %} value="10">10</option>
+        <option {% if session.get('limit') == 15 %} selected="selected" {% endif %} value="15">15</option>
+        <option {% if session.get('limit') == 20 %} selected="selected" {% endif %} value="20">20</option>
+        <option {% if session.get('limit') == 25 %} selected="selected" {% endif %} value="25">25</option>
+        <option {% if session.get('limit') == 30 %} selected="selected" {% endif %} value="30">30</option>
+        <option {% if session.get('limit') == 50 %} selected="selected" {% endif %} value="50">50</option>
+        <option {% if session.get('limit') == 100 %} selected="selected" {% endif %} value="100">100</option>
+      </select>
+    </div>
+  </fieldset>
+</form>
